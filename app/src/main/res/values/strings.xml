@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Einstiegsbeispiel</string>
+    <string name="send_button">SENDEN</string>
+    <string name="matrikelNrInput_hint">11705766</string>
+    <string name="matrikelNrText">Gib deine Matrikelnummer ein</string>
+
 </resources>

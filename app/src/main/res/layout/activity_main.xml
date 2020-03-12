@@ -12,8 +12,8 @@
         android:layout_width="313dp"
         android:layout_height="43dp"
         android:layout_marginTop="100dp"
-        android:text="Gib deine Matrikelnummer ein"
-        android:textSize="23dp"
+        android:text="@string/matrikelNrText"
+        android:textSize="23sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,8 +24,8 @@
         android:layout_width="95dp"
         android:layout_height="52dp"
         android:layout_marginTop="32dp"
-        android:hint="11705766"
-        android:numeric="integer"
+        android:hint="@string/matrikelNrInput_hint"
+        android:inputType="number"
         android:singleLine="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -37,7 +37,7 @@
         android:layout_width="169dp"
         android:layout_height="48dp"
         android:gravity="center_horizontal"
-        android:text="SENDEN"
+        android:text="@string/send_button"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -46,5 +46,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/matrikelNrInput"
         app:layout_constraintVertical_bias="0.807" />
+
+    <TextView
+        android:id="@+id/serverResponseTextView"
+        android:layout_width="258dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:enabled="false"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matrikelNrInput" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
