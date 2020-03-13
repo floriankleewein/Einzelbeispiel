@@ -40,5 +40,23 @@ public class MainActivity extends AppCompatActivity {
                 outputTextView.setText(outputToShow);
             }
         });
+
+        Button calcButton = findViewById(R.id.calculateButton);
+        final TextView calcTextView = findViewById(R.id.calcTextView);
+        calcButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+               char[] input =  inputFromUser.getText().toString().toCharArray();
+               int x;
+               int sum = 0;
+               for(int i = 0; i < input.length; i++){
+                   x = Integer.parseInt(input[i] + "");
+                   sum+=x;
+               }
+                String test = Integer.toBinaryString(sum);
+               calcTextView.setText("Quersumme der Matrikelnummer in Binärdarstellung: " + Integer.toBinaryString(sum));
+            }
+        });
     }
 }

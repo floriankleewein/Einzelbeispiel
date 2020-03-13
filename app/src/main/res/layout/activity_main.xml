@@ -9,23 +9,23 @@
 
     <TextView
         android:id="@+id/matrikelNrTextView"
-        android:layout_width="313dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="315dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
         android:text="@string/matrikelNrText"
         android:textSize="23sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/matrikelNrInput"
         android:layout_width="95dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="32dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
         android:hint="@string/matrikelNrInput_hint"
         android:inputType="number"
+        android:maxLength="8"
         android:singleLine="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -34,29 +34,54 @@
 
     <Button
         android:id="@+id/sendButton"
-        android:layout_width="169dp"
-        android:layout_height="48dp"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
         android:gravity="center_horizontal"
         android:text="@string/send_button"
         android:textAlignment="center"
+        android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/matrikelNrInput"
-        app:layout_constraintVertical_bias="0.807" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/calculate_button"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/serverResponseTextView"
         android:layout_width="258dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:enabled="false"
+        android:textColor="#000000"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/matrikelNrInput" />
+
+    <TextView
+        android:id="@+id/calcTextView"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serverResponseTextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
